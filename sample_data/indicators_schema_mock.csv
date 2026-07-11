@@ -1,0 +1,12 @@
+indicator_id,source_id,source_type,indicator_name,value,unit,timestamp,collection_method
+IND-0001,RBZ-01,public,interbank_fx_rate,13.42,ZiG_per_USD,2026-06-30T09:00:00+02:00,api
+IND-0002,ZIMSTAT-01,public,cpi_month_on_month,1.8,percent,2026-06-30T00:00:00+02:00,scheduled_pull
+IND-0003,WB-01,public,fuel_price_index,102.4,index_points,2026-06-30T00:00:00+02:00,scheduled_pull
+IND-0004,AEOS-01,struccleaf_platform,solar_generation_output,4820,kWh,2026-06-30T09:00:00+02:00,event_stream
+IND-0005,WAZI-01,struccleaf_platform,water_infra_uptime,97.2,percent,2026-06-30T09:00:00+02:00,event_stream
+
+# Notes:
+# - This is a schema mock, not live production data.
+# - source_type is one of: public, struccleaf_platform, manual_curated
+# - timestamp follows ISO 8601 format throughout, per Track 1 Data guidance conventions.
+# - See docs/architecture.png for how these indicators flow into the composite index model.
